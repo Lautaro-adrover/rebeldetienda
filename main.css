@@ -319,7 +319,8 @@ h3 {
         font-size: 22px;
 
     }
-}
+
+    /*Edicion del nuevo navegador de las redes sociales*/
 
 #redessociales {
     width: 64px;
@@ -379,8 +380,6 @@ h3 {
     position: absolute;
     left: 245px;
 }
-
-
 
 .smedia.facebook {
     background: url(https://4.bp.blogspot.com/-49s_0_9mdVo/UWHsMIvJBNI/AAAAAAAABn8/6bVMlN4Qz7Y/s1600/bubble_facebook_share_button.png);
