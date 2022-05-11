@@ -29,35 +29,6 @@ h1 {
     color: rgb(6, 5, 5);
 }
 
-/*Estilo para la navegacion del menu principal*/
-
-.menu-principal {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: inside;
-    font-size: 10px;
-    font-weight: 180px;
-    text-align: start;
-    font-family: 'Grape Nuts', cursive;
-    color: antiquewhite;
-    padding: 10px 25px;
-    text-align: center;
-}
-
-.menu-principal-1 {
-    display: flex;
-    justify-content: center;
-    background-color: salmon;
-    color: antiquewhite;
-    padding: 10px 30px;
-}
-
-.menu-principal-1:hover {
-    background-color: rosybrown;
-}
-
-
 
 /*la idea es a lo largo del proyecto ir cambiando de tamaño de letra segun seccion*/
 p {
@@ -116,16 +87,10 @@ footer {
     grid-row: 3;
 }
 
-.body-quienes {
-    width: 90%;
-    max-width: 900px;
-    margin: 2em auto;
-    font: .7em/1.2 Arial, Helvetica, sans-serif;
-}
 
 .container-wrapper {
     display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-columns: (12, minmax(0, 1fr));
     grid-gap: 20px;
 
 }
@@ -140,25 +105,21 @@ footer {
     font-size: 20px;
 }
 
-/*ALGO QUE INTENTE DE MIL MANERAS PERO NO PUDE SOLUCIONAR- QUE NO SE ROMPA LA PARTE DE STAFF EN EL RESPONSIVE MOBILE*/
+/*ALGO QUE INTENTE DE MIL MANERAS PERO NO PUDE SOLUCIONAR- QUE SE ADAPTE EN EL RESPONSIVE MOBILE*/
 
 .a-quienes {
-    border-right: 1px solid #999;
-    font-size: small;
+    border-right: 5px solid #999;
+    font-size: medium;
 }
 
-.staff {
-    font-size: 15px;
-    align-items: flex-start;
-}
 
 
 /*Estilo de mi pagina TIENDA*/
 
 /*Edicion sobre las imagenes del carrito del ecommerce ya pensado en que se vea bien en los 3 puntos de quiebre*/
 .tienda-productos img {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-area: auto;
     width: 200px;
     padding: 18px;
     border-radius: 35px;
@@ -169,10 +130,11 @@ footer {
 
 }
 
-/*edicion de mis encabezados en las otras paginas*/
+/*edicion de los botones de la pagina principal*/
 h2 {
-    font-size: 1.8em;
+    justify-content: center;
     text-align: center;
+    font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: black;
     padding: 80px;
@@ -248,14 +210,9 @@ h3 {
     justify-content: flex-start;
 }
 
-/*edicion de los logos de nuestras redes*/
-.redes-sociales img {
-
-    padding: 15px;
-    width: 65px;
 
 
-}
+
 
 /*animacion al logo principal*/
 
@@ -285,7 +242,6 @@ h3 {
     transform: scale(.1);
 }
 
-/*animacion a mi subtitulo de pagina para practicar transformaciones*/
 
 
 
@@ -304,37 +260,12 @@ h3 {
 }
 
 
-/* MEDIAS QUERIS PARA ADAPTAR LA PAGINA A UNA PC Y TABLET*/
-
-/*Media para adaptar el navbar*/
-
-/* -- DESKTOP -- */
-
-@media screen and (min-width: 992px) {
-    .menu-principal-1 {
-        font-size: 20px
-    }
-
-    .staff {
-        font-size: 25px;
-
-    }
-}
-
-/* -- TABLET -- */
-@media screen and (min-width: 576px) and (max-width: 992px) {
-    .menu-principal-1 {
-        font-size: 22px
-    }
-
-    .staff {
-        font-size: 22px;
-
-    }
-}
 
 /*animacion a mis redes sociales - con futuro lugar para email - youtube etc*/
 #redessociales {
+    display: flex;
+    text-align: start;
+    justify-content: start;
     width: 64px;
     height: 64px;
     border-radius: 75px;
@@ -365,7 +296,7 @@ h3 {
     -o-transform: translate(0px, 0);
     -moz-transform: translate(0px, 0);
     margin: 10px 0px 0px 20px;
-    position: absolute;
+    position: static;
 }
 
 #redessociales:hover .smedia:nth-child(1) {
@@ -402,27 +333,19 @@ h3 {
     background: url(https://4.bp.blogspot.com/-49s_0_9mdVo/UWHsMIvJBNI/AAAAAAAABn8/6bVMlN4Qz7Y/s1600/bubble_facebook_share_button.png);
 }
 
-.smedia.twitter {
-    background: url(https://2.bp.blogspot.com/-3r8sHe1Qy5M/UWHsNMDDzHI/AAAAAAAABog/q3V7mYirmOY/s1600/bubble_twitter_share_button.png);
-}
 
-.smedia.email {
-    background: url(https://3.bp.blogspot.com/-ZhFqBhp79cA/UWHsMBmPxsI/AAAAAAAABn4/O8k_pGf1oCU/s1600/bubble_email_share_button.png);
-}
+
 
 .smedia.instagram {
     background: url(https://1.bp.blogspot.com/-FSkby0cXU_8/UWHsMis8c2I/AAAAAAAABoQ/y8coyc5ystc/s1600/bubble_instagram_share_button.png);
 }
 
-.smedia.youtube {
-    background: url(https://4.bp.blogspot.com/-x2oyT1dBzwA/UWHsNtcWXVI/AAAAAAAABo8/8kCXTVMbM6Y/s1600/bubble_youtube_share_button.png);
-}
 
-.smedia.vimeo {
-    background: url(https://2.bp.blogspot.com/-01SWPeX-584/UWHsNim9CAI/AAAAAAAABo4/Z9jMox_9UrE/s1600/bubble_vimeo_share_button.png);
-}
 
 .smedia:hover {
     background-position: 0 -46px;
 }
 
+.redesboton{
+    justify-content: left;
+}
