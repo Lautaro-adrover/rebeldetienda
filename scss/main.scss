@@ -1,3 +1,8 @@
+// variables
+
+$color-primary: rgb(131, 57, 57); 
+
+
 /*resetar todo el estilo que traia previo mi HTML por defecto*/
 * {
     margin: 0;
@@ -7,7 +12,7 @@
 
 /* Fondo unico momentaneo para darle un estilo a la web */
 .fondo-compartido {
-    background-image: url("./IMG/fondo\ pagina\ principal.jpg");
+    background-image: url("../IMG/fondo\ pagina\ principal.jpg");
 
 }
 
@@ -22,7 +27,7 @@ h1 {
     font-weight: 600;
     text-align: left;
     font-family: 'Rubik Moonrocks', cursive;
-    color: black;
+    color: $color-primary;
 }
 
 .encabezados {
@@ -37,18 +42,19 @@ p {
     font-weight: 550;
     text-align: left;
     font-family: 'Grape Nuts', cursive;
-    color: rgb(2, 2, 3);
+    color: $color-primary;
 }
 
 /*Estilo de mis listas*/
 ul {
     list-style: none;
-}
 
-ul li {
-    font-style: italic;
-    display: inline-block;
-    margin: 0px 5px;
+    li {
+        font-style: italic;
+        display: inline-block;
+        margin: 0px 5px;
+    
+}
 
 
 
@@ -146,6 +152,8 @@ h3 {
     padding: 10px;
 }
 
+
+/*edicion orden del carrito de compras*/
 .tienda-portada {
     display: flex;
     flex-direction: row;
@@ -153,19 +161,13 @@ h3 {
 
 }
 
-
-/*edicion orden del carrito de compras*/
 .tienda-productos {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-}
 
-
-
-/*edicion sobre los encabezados de los produtos de la tienda*/
-.tienda-productos h4 {
+h4 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.5;
     margin-top: 5px;
@@ -173,14 +175,17 @@ h3 {
 
 }
 
-.tienda-productos p {
+
+/*edicion sobre los encabezados de los produtos de la tienda*/
+
+ p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.3em;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-
+}
 /*Estilos para mi pagina PREGUNTAS FRECUENTES*/
 
 /*estilo de bordes para las preguntas frecuentes*/
