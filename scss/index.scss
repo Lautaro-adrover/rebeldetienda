@@ -1,0 +1,97 @@
+/*resetar todo el estilo que traia previo mi HTML por defecto*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo unico momentaneo para darle un estilo a la web */
+.fondo-compartido {
+    background-image: url("../IMG/fondo\ pagina\ principal.jpg");
+
+}
+
+/*Estilo para mi pagina INDEX*/
+
+/*Edicion de mi "TITULO" de pagina*/
+h1 {
+
+    padding: 70px;
+    margin: 10 px;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: left;
+    font-family: 'Rubik Moonrocks', cursive;
+    color: $color-primary;
+}
+
+.encabezados {
+    color: rgb(6, 5, 5);
+}
+
+
+/*la idea es a lo largo del proyecto ir cambiando de tamaño de letra segun seccion*/
+p {
+    padding: 15px;
+    font-size: 1.7em;
+    font-weight: 550;
+    text-align: left;
+    font-family: 'Grape Nuts', cursive;
+    color: $color-primary;
+}
+
+/*Estilo de mis listas*/
+ul {
+    list-style: none;
+
+    li {
+        font-style: italic;
+        display: inline-block;
+        margin: 0px 5px;
+    
+}
+
+
+
+}
+
+/*edicion del logo de whatsapp contacto*/
+
+.whatsapp img {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    width: 90px;
+
+
+}/*animacion al logo principal*/
+
+.container {
+    position: static;
+}
+
+.caja {
+
+    color: #FFF;
+    text-align: center;
+    line-height: 120px;
+    margin: 10px;
+    float: left;
+    font-size: 11px;
+    font-family: Arial;
+}
+
+.caja1 {
+
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+.caja1:hover {
+    -webkit-transform: scale(.1);
+    transform: scale(.1);
+}
+
+
+
+

@@ -18,7 +18,7 @@ h1 {
   font-weight: 600;
   text-align: left;
   font-family: 'Rubik Moonrocks', cursive;
-  color: #833939; }
+  color: #976666; }
 
 .encabezados {
   color: #060505; }
@@ -30,7 +30,105 @@ p {
   font-weight: 550;
   text-align: left;
   font-family: 'Grape Nuts', cursive;
-  color: #833939; }
+  color: #976666; }
+
+/*Estilo de mis listas*/
+ul {
+  list-style: none; }
+  ul li {
+    font-style: italic;
+    display: inline-block;
+    margin: 0px 5px; }
+
+/*edicion del logo de whatsapp contacto*/
+.whatsapp img {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  width: 90px; }
+
+/*Estilo de mi pagina TIENDA*/
+/*Edicion sobre las imagenes del carrito del ecommerce ya pensado en que se vea bien en los 3 puntos de quiebre*/
+.tienda-productos img {
+  display: grid;
+  grid-area: auto;
+  width: 200px;
+  padding: 18px;
+  border-radius: 35px;
+  background-color: white;
+  box-shadow: 0 1px 3px;
+  margin: 10px 50px;
+  margin-top: 40px; }
+
+/*edicion de los botones de la pagina principal*/
+h2 {
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  padding: 80px; }
+
+h3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 10px; }
+
+/*edicion orden del carrito de compras*/
+.tienda-portada {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.tienda-productos {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+h4 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.5;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+/*edicion sobre los encabezados de los produtos de la tienda*/
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.3em;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+/*resetar todo el estilo que traia previo mi HTML por defecto*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Fondo unico momentaneo para darle un estilo a la web */
+.fondo-compartido {
+  background-image: url("../IMG/fondo pagina principal.jpg"); }
+
+/*Edicion de mi "TITULO" de pagina*/
+h1 {
+  padding: 70px;
+  margin: 10 px;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: left;
+  font-family: 'Rubik Moonrocks', cursive;
+  color: #976666; }
+
+.encabezados {
+  color: #060505; }
+
+/*la idea es a lo largo del proyecto ir cambiando de tamaño de letra segun seccion*/
+p {
+  padding: 15px;
+  font-size: 1.7em;
+  font-weight: 550;
+  text-align: left;
+  font-family: 'Grape Nuts', cursive;
+  color: #976666; }
 
 /*Estilo de mis listas*/
 ul {
@@ -83,61 +181,144 @@ footer {
   border-right: 5px solid #999;
   font-size: medium; }
 
-/*Estilo de mi pagina TIENDA*/
-/*Edicion sobre las imagenes del carrito del ecommerce ya pensado en que se vea bien en los 3 puntos de quiebre*/
-.tienda-productos img {
-  display: grid;
-  grid-area: auto;
-  width: 200px;
-  padding: 18px;
-  border-radius: 35px;
-  background-color: white;
-  box-shadow: 0 1px 3px;
-  margin: 10px 50px;
-  margin-top: 40px; }
+/*animacion al logo principal*/
+.container {
+  position: static; }
 
-/*edicion de los botones de la pagina principal*/
-h2 {
-  justify-content: center;
+.caja {
+  color: #FFF;
   text-align: center;
-  font-size: 40px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: black;
-  padding: 80px; }
+  line-height: 120px;
+  margin: 10px;
+  float: left;
+  font-size: 11px;
+  font-family: Arial; }
 
-h3 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 10px; }
+.caja1 {
+  -webkit-transition: 1s linear;
+  transition: 1s linear; }
 
-/*edicion orden del carrito de compras*/
-.tienda-portada {
+.caja1:hover {
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1); }
+
+/*animacion a mis redes sociales - con futuro lugar para email - youtube etc*/
+#redessociales {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
+  text-align: start;
+  justify-content: start;
+  width: 64px;
+  height: 64px;
+  border-radius: 75px;
+  border: 5px solid #fff;
+  background: url(https://4.bp.blogspot.com/-gKMIOgeaEBY/UWHsOA382oI/AAAAAAAABpI/5GdyRTAeKII/s1600/share_core_square.jpg); }
 
-.tienda-productos {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
-  /*edicion sobre los encabezados de los produtos de la tienda*/ }
-  .tienda-productos h4 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.5;
-    margin-top: 5px;
-    margin-bottom: 5px; }
-  .tienda-productos p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.3em;
-    margin-top: 5px;
-    margin-bottom: 5px; }
+.smedia {
+  position: absolute;
+  -webkit-transition: left 0.5s cubic-bezier(0.1, 0.8, 0.9, 1), opacity 1s linear;
+  -moz-transition: left 0.5s cubic-bezier(0.1, 0.8, 0.9, 1), opacity 1s linear;
+  -o-transition: left 0.5s cubic-bezier(0.1, 0.8, 0.9, 1), opacity 1s linear;
+  display: inline;
+  opacity: 0;
+  width: 46px;
+  height: 46px;
+  z-index: 100;
+  margin: 10px 0px 0px 20px;
+  text-indent: -9999px;
+  background: no-repeat;
+  left: 3px; }
 
-/*Estilos para mi pagina PREGUNTAS FRECUENTES*/
-/*estilo de bordes para las preguntas frecuentes*/
-.preguntas-frecuentes {
-  padding: 5px 15px 20px 25px;
-  border-style: dotted;
-  border-color: #014a4a; }
+#redessociales:hover .smedia {
+  opacity: 1;
+  transform: translate(0px, 0);
+  -webkit-transform: translate(0px, 0);
+  -o-transform: translate(0px, 0);
+  -moz-transform: translate(0px, 0);
+  margin: 10px 0px 0px 20px;
+  position: static; }
+
+#redessociales:hover .smedia:nth-child(1) {
+  position: absolute;
+  left: 65px; }
+
+#redessociales:hover .smedia:nth-child(2) {
+  position: absolute;
+  left: 110px; }
+
+#redessociales:hover .smedia:nth-child(3) {
+  position: absolute;
+  left: 155px; }
+
+#redessociales:hover .smedia:nth-child(4) {
+  position: absolute;
+  left: 200px; }
+
+#redessociales:hover .smedia:nth-child(5) {
+  position: absolute;
+  left: 245px; }
+
+#redessociales:hover .smedia:nth-child(6) {
+  position: absolute;
+  left: 290px; }
+
+.smedia.facebook {
+  background: url(https://4.bp.blogspot.com/-49s_0_9mdVo/UWHsMIvJBNI/AAAAAAAABn8/6bVMlN4Qz7Y/s1600/bubble_facebook_share_button.png); }
+
+.smedia.instagram {
+  background: url(https://1.bp.blogspot.com/-FSkby0cXU_8/UWHsMis8c2I/AAAAAAAABoQ/y8coyc5ystc/s1600/bubble_instagram_share_button.png); }
+
+.smedia:hover {
+  background-position: 0 -46px; }
+
+.redesboton {
+  justify-content: left; }
+
+/*resetar todo el estilo que traia previo mi HTML por defecto*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Fondo unico momentaneo para darle un estilo a la web */
+.fondo-compartido {
+  background-image: url("../IMG/fondo pagina principal.jpg"); }
+
+/*Edicion de mi "TITULO" de pagina*/
+h1 {
+  padding: 70px;
+  margin: 10 px;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: left;
+  font-family: 'Rubik Moonrocks', cursive;
+  color: #976666; }
+
+.encabezados {
+  color: #060505; }
+
+/*la idea es a lo largo del proyecto ir cambiando de tamaño de letra segun seccion*/
+p {
+  padding: 15px;
+  font-size: 1.7em;
+  font-weight: 550;
+  text-align: left;
+  font-family: 'Grape Nuts', cursive;
+  color: #976666; }
+
+/*Estilo de mis listas*/
+ul {
+  list-style: none; }
+  ul li {
+    font-style: italic;
+    display: inline-block;
+    margin: 0px 5px; }
+
+/*edicion del logo de whatsapp contacto*/
+.whatsapp img {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  width: 90px; }
 
 /*Estilo para mi pagina CONCTACTO*/
 .header {
@@ -183,6 +364,314 @@ h3 {
   width: 600px;
   height: 400px;
   padding: 40px; }
+
+/*animacion a mis redes sociales - con futuro lugar para email - youtube etc*/
+#redessociales {
+  display: flex;
+  text-align: start;
+  justify-content: start;
+  width: 64px;
+  height: 64px;
+  border-radius: 75px;
+  border: 5px solid #fff;
+  background: url(https://4.bp.blogspot.com/-gKMIOgeaEBY/UWHsOA382oI/AAAAAAAABpI/5GdyRTAeKII/s1600/share_core_square.jpg); }
+
+.smedia {
+  position: absolute;
+  -webkit-transition: left 0.5s cubic-bezier(0.1, 0.8, 0.9, 1), opacity 1s linear;
+  -moz-transition: left 0.5s cubic-bezier(0.1, 0.8, 0.9, 1), opacity 1s linear;
+  -o-transition: left 0.5s cubic-bezier(0.1, 0.8, 0.9, 1), opacity 1s linear;
+  display: inline;
+  opacity: 0;
+  width: 46px;
+  height: 46px;
+  z-index: 100;
+  margin: 10px 0px 0px 20px;
+  text-indent: -9999px;
+  background: no-repeat;
+  left: 3px; }
+
+#redessociales:hover .smedia {
+  opacity: 1;
+  transform: translate(0px, 0);
+  -webkit-transform: translate(0px, 0);
+  -o-transform: translate(0px, 0);
+  -moz-transform: translate(0px, 0);
+  margin: 10px 0px 0px 20px;
+  position: static; }
+
+#redessociales:hover .smedia:nth-child(1) {
+  position: absolute;
+  left: 65px; }
+
+#redessociales:hover .smedia:nth-child(2) {
+  position: absolute;
+  left: 110px; }
+
+#redessociales:hover .smedia:nth-child(3) {
+  position: absolute;
+  left: 155px; }
+
+#redessociales:hover .smedia:nth-child(4) {
+  position: absolute;
+  left: 200px; }
+
+#redessociales:hover .smedia:nth-child(5) {
+  position: absolute;
+  left: 245px; }
+
+#redessociales:hover .smedia:nth-child(6) {
+  position: absolute;
+  left: 290px; }
+
+.smedia.facebook {
+  background: url(https://4.bp.blogspot.com/-49s_0_9mdVo/UWHsMIvJBNI/AAAAAAAABn8/6bVMlN4Qz7Y/s1600/bubble_facebook_share_button.png); }
+
+.smedia.instagram {
+  background: url(https://1.bp.blogspot.com/-FSkby0cXU_8/UWHsMis8c2I/AAAAAAAABoQ/y8coyc5ystc/s1600/bubble_instagram_share_button.png); }
+
+.smedia:hover {
+  background-position: 0 -46px; }
+
+.redesboton {
+  justify-content: left; }
+
+/*resetar todo el estilo que traia previo mi HTML por defecto*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Fondo unico momentaneo para darle un estilo a la web */
+.fondo-compartido {
+  background-image: url("../IMG/fondo pagina principal.jpg"); }
+
+/*Estilo para mi pagina INDEX*/
+/*Edicion de mi "TITULO" de pagina*/
+h1 {
+  padding: 75px;
+  margin: 10 px;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: left;
+  font-family: 'Rubik Moonrocks', cursive;
+  color: #976666; }
+
+.encabezados {
+  color: #060505; }
+
+/*la idea es a lo largo del proyecto ir cambiando de tamaño de letra segun seccion*/
+p {
+  padding: 15px;
+  font-size: 1.7em;
+  font-weight: 550;
+  text-align: left;
+  font-family: 'Grape Nuts', cursive;
+  color: #020203; }
+
+/*Estilo de mis listas*/
+ul {
+  list-style: none; }
+  ul li {
+    font-style: italic;
+    display: inline-block;
+    margin: 0px 5px; }
+
+/*Estilo de mi pagina TIENDA*/
+/*Edicion sobre las imagenes del carrito del ecommerce ya pensado en que se vea bien en los 3 puntos de quiebre*/
+.tienda-productos img {
+  display: grid;
+  grid-area: auto;
+  width: 200px;
+  padding: 18px;
+  border-radius: 35px;
+  background-color: white;
+  box-shadow: 0 1px 3px;
+  margin: 10px 50px;
+  margin-top: 40px; }
+
+/*edicion de los botones de la pagina principal*/
+h2 {
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  padding: 80px; }
+
+h3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 10px; }
+
+/*edicion orden del carrito de compras*/
+.tienda-portada {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.tienda-productos {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+h4 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.5;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+/*edicion sobre los encabezados de los produtos de la tienda*/
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.3em;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+/*edicion del logo de whatsapp contacto*/
+.whatsapp img {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  width: 90px; }
+
+/*animacion a mis redes sociales - con futuro lugar para email - youtube etc*/
+#redessociales {
+  display: flex;
+  text-align: start;
+  justify-content: start;
+  width: 64px;
+  height: 64px;
+  border-radius: 75px;
+  border: 5px solid #fff;
+  background: url(https://4.bp.blogspot.com/-gKMIOgeaEBY/UWHsOA382oI/AAAAAAAABpI/5GdyRTAeKII/s1600/share_core_square.jpg); }
+
+.smedia {
+  position: absolute;
+  -webkit-transition: left 0.5s cubic-bezier(0.1, 0.8, 0.9, 1), opacity 1s linear;
+  -moz-transition: left 0.5s cubic-bezier(0.1, 0.8, 0.9, 1), opacity 1s linear;
+  -o-transition: left 0.5s cubic-bezier(0.1, 0.8, 0.9, 1), opacity 1s linear;
+  display: inline;
+  opacity: 0;
+  width: 46px;
+  height: 46px;
+  z-index: 100;
+  margin: 10px 0px 0px 20px;
+  text-indent: -9999px;
+  background: no-repeat;
+  left: 3px; }
+
+#redessociales:hover .smedia {
+  opacity: 1;
+  transform: translate(0px, 0);
+  -webkit-transform: translate(0px, 0);
+  -o-transform: translate(0px, 0);
+  -moz-transform: translate(0px, 0);
+  margin: 10px 0px 0px 20px;
+  position: static; }
+
+#redessociales:hover .smedia:nth-child(1) {
+  position: absolute;
+  left: 65px; }
+
+#redessociales:hover .smedia:nth-child(2) {
+  position: absolute;
+  left: 110px; }
+
+#redessociales:hover .smedia:nth-child(3) {
+  position: absolute;
+  left: 155px; }
+
+#redessociales:hover .smedia:nth-child(4) {
+  position: absolute;
+  left: 200px; }
+
+#redessociales:hover .smedia:nth-child(5) {
+  position: absolute;
+  left: 245px; }
+
+#redessociales:hover .smedia:nth-child(6) {
+  position: absolute;
+  left: 290px; }
+
+.smedia.facebook {
+  background: url(https://4.bp.blogspot.com/-49s_0_9mdVo/UWHsMIvJBNI/AAAAAAAABn8/6bVMlN4Qz7Y/s1600/bubble_facebook_share_button.png); }
+
+.smedia.instagram {
+  background: url(https://1.bp.blogspot.com/-FSkby0cXU_8/UWHsMis8c2I/AAAAAAAABoQ/y8coyc5ystc/s1600/bubble_instagram_share_button.png); }
+
+.smedia:hover {
+  background-position: 0 -46px; }
+
+.redesboton {
+  justify-content: left; }
+
+/*resetar todo el estilo que traia previo mi HTML por defecto*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Fondo unico momentaneo para darle un estilo a la web */
+.fondo-compartido {
+  background-image: url("../IMG/fondo pagina principal.jpg"); }
+
+/*Edicion de mi "TITULO" de pagina*/
+h1 {
+  padding: 70px;
+  margin: 10 px;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: left;
+  font-family: 'Rubik Moonrocks', cursive;
+  color: #976666; }
+
+.encabezados {
+  color: #060505; }
+
+/*la idea es a lo largo del proyecto ir cambiando de tamaño de letra segun seccion*/
+p {
+  padding: 15px;
+  font-size: 1.7em;
+  font-weight: 550;
+  text-align: left;
+  font-family: 'Grape Nuts', cursive;
+  color: #976666; }
+
+/*edicion del logo de whatsapp contacto*/
+.whatsapp img {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  width: 90px; }
+
+/*Estilos para mi pagina PREGUNTAS FRECUENTES*/
+/*estilo de bordes para las preguntas frecuentes*/
+.preguntas-frecuentes {
+  padding: 5px 15px 20px 25px;
+  border-style: dotted;
+  border-color: #014a4a; }
+
+/*animacion al logo principal*/
+.container {
+  position: static; }
+
+.caja {
+  color: #FFF;
+  text-align: center;
+  line-height: 120px;
+  margin: 10px;
+  float: left;
+  font-size: 11px;
+  font-family: Arial; }
+
+.caja1 {
+  -webkit-transition: 1s linear;
+  transition: 1s linear; }
+
+.caja1:hover {
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1); }
 
 /*animacion a mis redes sociales - con futuro lugar para email - youtube etc*/
 #redessociales {
