@@ -1,4 +1,3 @@
-
 /*resetar todo el estilo que traia previo mi HTML por defecto*/
 * {
     margin: 0;
@@ -6,19 +5,16 @@
     box-sizing: border-box;
 }
 
-
 /* Fondo unico momentaneo para darle un estilo a la web */
 .fondo-compartido {
-    background-image: url("../IMG/fondo\ pagina\ principal.jpg");
+    background-image: url("../IMG/fondo\ pagina\ principal.jpg")
 
 }
-
-/*Estilo para mi pagina INDEX*/
 
 /*Edicion de mi "TITULO" de pagina*/
 h1 {
 
-    padding: 75px;
+    padding: 70px;
     margin: 10 px;
     font-size: 2em;
     font-weight: 600;
@@ -39,88 +35,7 @@ p {
     font-weight: 550;
     text-align: left;
     font-family: 'Grape Nuts', cursive;
-    color: rgb(2, 2, 3);
-}
-
-/*Estilo de mis listas*/
-ul {
-    list-style: none;
-
-    li {
-        font-style: italic;
-        display: inline-block;
-        margin: 0px 5px;
-    
-}
-
-
-
-}
-
-/*Estilo de mi pagina TIENDA*/
-
-/*Edicion sobre las imagenes del carrito del ecommerce ya pensado en que se vea bien en los 3 puntos de quiebre*/
-.tienda-productos img {
-    display: grid;
-    grid-area: auto;
-    width: 200px;
-    padding: 18px;
-    border-radius: 35px;
-    background-color: white;
-    box-shadow: 0 1px 3px;
-    margin: 10px 50px;
-    margin-top: 40px;
-
-}
-
-/*edicion de los botones de la pagina principal*/
-h2 {
-    justify-content: center;
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: black;
-    padding: 80px;
-
-}
-
-h3 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 10px;
-}
-
-
-/*edicion orden del carrito de compras*/
-.tienda-portada {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-}
-
-.tienda-productos {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    }
-
-h4 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.5;
-    margin-top: 5px;
-    margin-bottom: 5px;
-
-}
-
-
-/*edicion sobre los encabezados de los produtos de la tienda*/
-
- p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.3em;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    color: $color-secundary;
 }
 
 /*edicion del logo de whatsapp contacto*/
@@ -134,6 +49,44 @@ h4 {
 
 }
 
+
+/*Estilos para mi pagina PREGUNTAS FRECUENTES*/
+
+/*estilo de bordes para las preguntas frecuentes*/
+.preguntas-frecuentes {
+    padding: 5px 15px 20px 25px;
+    border-style: dotted;
+    border-color: rgb(1, 74, 74);
+}
+
+/*animacion al logo principal*/
+
+.container {
+    position: static;
+
+.caja {
+
+    color: #FFF;
+    text-align: center;
+    line-height: 120px;
+    margin: 10px;
+    float: left;
+    font-size: 11px;
+    font-family: Arial;
+}
+
+.caja1 {
+
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+.caja1:hover {
+    -webkit-transform: scale(.1);
+    transform: scale(.1);
+}
+
+}
 /*animacion a mis redes sociales - con futuro lugar para email - youtube etc*/
 #redessociales {
     display: flex;
@@ -222,3 +175,4 @@ h4 {
 .redesboton{
     justify-content: left;
 }
+

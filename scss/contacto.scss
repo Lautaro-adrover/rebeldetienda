@@ -35,23 +35,11 @@ p {
     font-weight: 550;
     text-align: left;
     font-family: 'Grape Nuts', cursive;
-    color: $color-primary;
-}
-
-/*Estilo de mis listas*/
-ul {
-    list-style: none;
-
-    li {
-        font-style: italic;
-        display: inline-block;
-        margin: 0px 5px;
-    
+    color: $color-secundary;
 }
 
 
 
-}
 
 /*edicion del logo de whatsapp contacto*/
 
@@ -64,52 +52,50 @@ ul {
 
 }
 
-/*Estilo para mi pagina QUIENES SOMOS*/
+/*Estilo para mi pagina CONCTACTO*/
 
-header {
-    grid-column: 1 / 13;
-    grid-row: 1;
+$estilos: (rosa: #f47ac5,
+    lila: #960a86);
+
+@mixin fondo($color) {
+    @if map-has-key($estilos, $color) {
+        background-color: map-get($estilos, $color);
+    }
 }
 
-article {
-    grid-column: 4 / 13;
-    grid-row: 2;
+.uno {
+    @include fondo(rosa);
+    color: white;
 }
 
-aside {
-    grid-column: 1 / 4;
-    grid-row: 2;
-}
-
-footer {
-    grid-column: 1 / 13;
-    grid-row: 3;
+.dos {
+    @include fondo(lila);
+    color: white;
 }
 
 
-.container-wrapper {
-    display: grid;
-    grid-template-columns: (12, minmax(0, 1fr));
-    grid-gap: 20px;
 
-}
 
-.header-quienes,
-.fo-quienes {
-    border-radius: 5px;
+.header  {
+    color: #36A0FF;
+    font-size: 27px;
     padding: 10px;
-    background-color: rgb(253, 132, 185);
-    border: 2px solid rgb(255, 74, 255);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
 }
 
-/*ALGO QUE INTENTE DE MIL MANERAS PERO NO PUDE SOLUCIONAR- QUE SE ADAPTE EN EL RESPONSIVE MOBILE*/
-
-.a-quienes {
-    border-right: 5px solid #999;
-    font-size: medium;
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
 }
+
+.redes-sociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+
+
 
 /*animacion al logo principal*/
 
@@ -138,6 +124,25 @@ footer {
     -webkit-transform: scale(.1);
     transform: scale(.1);
 }
+
+
+
+
+
+
+/*EDICION DE MI PAGINA - CONTACTO*/
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 600px;
+    height: 400px;
+    padding: 40px;
+
+
+}
+
+
 
 /*animacion a mis redes sociales - con futuro lugar para email - youtube etc*/
 #redessociales {
@@ -224,10 +229,6 @@ footer {
     background-position: 0 -46px;
 }
 
-.redesboton{
+.redesboton {
     justify-content: left;
 }
-
-
-
-

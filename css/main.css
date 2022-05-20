@@ -1,4 +1,29 @@
 @charset "UTF-8";
+.trabajo, .compromiso, .pasion {
+  width: 100px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 10px auto;
+  border-radius: 5px;
+  color: #FFFFFF; }
+
+.trabajo {
+  background-color: #f41a63; }
+
+.compromiso {
+  background-color: #900961; }
+
+.pasion {
+  background-color: #D61E20; }
+
+.uno {
+  background-color: #f47ac5;
+  color: white; }
+
+.dos {
+  background-color: #960a86;
+  color: white; }
+
 /*resetar todo el estilo que traia previo mi HTML por defecto*/
 * {
   margin: 0;
@@ -128,7 +153,7 @@ p {
   font-weight: 550;
   text-align: left;
   font-family: 'Grape Nuts', cursive;
-  color: #976666; }
+  color: black; }
 
 /*Estilo de mis listas*/
 ul {
@@ -303,15 +328,7 @@ p {
   font-weight: 550;
   text-align: left;
   font-family: 'Grape Nuts', cursive;
-  color: #976666; }
-
-/*Estilo de mis listas*/
-ul {
-  list-style: none; }
-  ul li {
-    font-style: italic;
-    display: inline-block;
-    margin: 0px 5px; }
+  color: black; }
 
 /*edicion del logo de whatsapp contacto*/
 .whatsapp img {
@@ -321,6 +338,14 @@ ul {
   width: 90px; }
 
 /*Estilo para mi pagina CONCTACTO*/
+.uno {
+  background-color: #f47ac5;
+  color: white; }
+
+.dos {
+  background-color: #960a86;
+  color: white; }
+
 .header {
   color: #36A0FF;
   font-size: 27px;
@@ -636,7 +661,7 @@ p {
   font-weight: 550;
   text-align: left;
   font-family: 'Grape Nuts', cursive;
-  color: #976666; }
+  color: black; }
 
 /*edicion del logo de whatsapp contacto*/
 .whatsapp img {
@@ -655,23 +680,20 @@ p {
 /*animacion al logo principal*/
 .container {
   position: static; }
-
-.caja {
-  color: #FFF;
-  text-align: center;
-  line-height: 120px;
-  margin: 10px;
-  float: left;
-  font-size: 11px;
-  font-family: Arial; }
-
-.caja1 {
-  -webkit-transition: 1s linear;
-  transition: 1s linear; }
-
-.caja1:hover {
-  -webkit-transform: scale(0.1);
-  transform: scale(0.1); }
+  .container .caja {
+    color: #FFF;
+    text-align: center;
+    line-height: 120px;
+    margin: 10px;
+    float: left;
+    font-size: 11px;
+    font-family: Arial; }
+  .container .caja1 {
+    -webkit-transition: 1s linear;
+    transition: 1s linear; }
+  .container .caja1:hover {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1); }
 
 /*animacion a mis redes sociales - con futuro lugar para email - youtube etc*/
 #redessociales {

@@ -1,0 +1,52 @@
+// variables
+
+$color-primary: rgb(151, 102, 102);
+$color-secundary: black;
+
+
+
+%valores {
+    width: 100px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px auto;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.trabajo {
+    @extend %valores;
+    background-color: #f41a63;
+    
+}
+
+.compromiso {
+    @extend %valores;
+    background-color: #900961;
+}
+
+.pasion {
+    @extend %valores;
+    background-color: #D61E20;
+}
+
+
+
+$estilos: (rosa: #f47ac5,
+    lila: #960a86);
+
+@mixin fondo($color) {
+    @if map-has-key($estilos, $color) {
+        background-color: map-get($estilos, $color);
+    }
+}
+
+.uno {
+    @include fondo(rosa);
+    color: white;
+}
+
+.dos {
+    @include fondo(lila);
+    color: white;
+}
