@@ -8,7 +8,6 @@
 /* Fondo unico momentaneo para darle un estilo a la web */
 .fondo-compartido {
     background-image: url("../IMG/fondo\ pagina\ principal.jpg")
-
 }
 
 /*Edicion de mi "TITULO" de pagina*/
@@ -64,29 +63,30 @@ p {
 .container {
     position: static;
 
-.caja {
+    .caja {
 
-    color: #FFF;
-    text-align: center;
-    line-height: 120px;
-    margin: 10px;
-    float: left;
-    font-size: 11px;
-    font-family: Arial;
+        color: #FFF;
+        text-align: center;
+        line-height: 120px;
+        margin: 10px;
+        float: left;
+        font-size: 11px;
+        font-family: Arial;
+    }
+
+    .caja1 {
+
+        -webkit-transition: 1s linear;
+        transition: 1s linear;
+    }
+
+    .caja1:hover {
+        -webkit-transform: scale(.1);
+        transform: scale(.1);
+    }
+
 }
 
-.caja1 {
-
-    -webkit-transition: 1s linear;
-    transition: 1s linear;
-}
-
-.caja1:hover {
-    -webkit-transform: scale(.1);
-    transform: scale(.1);
-}
-
-}
 /*animacion a mis redes sociales - con futuro lugar para email - youtube etc*/
 #redessociales {
     display: flex;
@@ -172,7 +172,6 @@ p {
     background-position: 0 -46px;
 }
 
-.redesboton{
+.redesboton {
     justify-content: left;
 }
-
