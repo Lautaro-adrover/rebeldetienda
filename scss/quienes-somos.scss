@@ -66,6 +66,9 @@ ul {
 
 /*Estilo para mi pagina QUIENES SOMOS*/
 
+
+
+
 header {
     grid-column: 1 / 13;
     grid-row: 1;
@@ -87,12 +90,9 @@ footer {
 }
 
 
-.container-wrapper {
-    display: grid;
-    grid-template-columns: (12, minmax(0, 1fr));
-    grid-gap: 20px;
 
-}
+    
+
 
 .header-quienes,
 .fo-quienes {

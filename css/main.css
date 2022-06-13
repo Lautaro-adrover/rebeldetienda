@@ -187,11 +187,6 @@ footer {
   grid-column: 1 / 13;
   grid-row: 3; }
 
-.container-wrapper {
-  display: grid;
-  grid-template-columns: 12, minmax(0, 1fr);
-  grid-gap: 20px; }
-
 .header-quienes,
 .fo-quienes {
   border-radius: 5px;
